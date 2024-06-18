@@ -24,6 +24,7 @@
 		01B1C41F2C21C68900F8B7D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01B1C4222C21C68900F8B7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01B1C4242C21C68900F8B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01B1C42B2C21CB3A00F8B7D1 /* DSHBuilder */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DSHBuilder; path = DSHBuilder/DSHBuilder; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		01B1C40A2C21C68800F8B7D1 = {
 			isa = PBXGroup;
 			children = (
+				01B1C42B2C21CB3A00F8B7D1 /* DSHBuilder */,
 				01B1C4152C21C68900F8B7D1 /* DSHBuilder */,
 				01B1C4142C21C68900F8B7D1 /* Products */,
 			);
