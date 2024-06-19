@@ -1,7 +1,7 @@
 import XCTest
-@testable import DSHBuilder
+@testable import YYGDSHBuilder
 
-final class DSHBuilderTests: XCTestCase {
+final class YYGDSHBuilderTests: XCTestCase {
     func testExample() throws {
         // XCTest Documentation
         // https://developer.apple.com/documentation/xctest

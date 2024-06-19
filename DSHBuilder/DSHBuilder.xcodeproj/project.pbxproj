@@ -13,6 +13,7 @@
 		01B1C41E2C21C68900F8B7D1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 01B1C41D2C21C68900F8B7D1 /* Base */; };
 		01B1C4202C21C68900F8B7D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01B1C41F2C21C68900F8B7D1 /* Assets.xcassets */; };
 		01B1C4232C21C68900F8B7D1 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 01B1C4222C21C68900F8B7D1 /* Base */; };
+		01B1C4312C21CFA200F8B7D1 /* YYGDSHBuilder in Frameworks */ = {isa = PBXBuildFile; productRef = 01B1C4302C21CFA200F8B7D1 /* YYGDSHBuilder */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,7 +25,7 @@
 		01B1C41F2C21C68900F8B7D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01B1C4222C21C68900F8B7D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01B1C4242C21C68900F8B7D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		01B1C42B2C21CB3A00F8B7D1 /* DSHBuilder */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = DSHBuilder; path = DSHBuilder/DSHBuilder; sourceTree = "<group>"; };
+		01B1C42F2C21CEC600F8B7D1 /* YYGDSHBuilder */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = YYGDSHBuilder; path = DSHBuilder/YYGDSHBuilder; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				01B1C4312C21CFA200F8B7D1 /* YYGDSHBuilder in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,9 +43,10 @@
 		01B1C40A2C21C68800F8B7D1 = {
 			isa = PBXGroup;
 			children = (
-				01B1C42B2C21CB3A00F8B7D1 /* DSHBuilder */,
+				01B1C42F2C21CEC600F8B7D1 /* YYGDSHBuilder */,
 				01B1C4152C21C68900F8B7D1 /* DSHBuilder */,
 				01B1C4142C21C68900F8B7D1 /* Products */,
+				01B1C42C2C21CE2700F8B7D1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,6 +72,13 @@
 			path = DSHBuilder;
 			sourceTree = "<group>";
 		};
+		01B1C42C2C21CE2700F8B7D1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +95,9 @@
 			dependencies = (
 			);
 			name = DSHBuilder;
+			packageProductDependencies = (
+				01B1C4302C21CFA200F8B7D1 /* YYGDSHBuilder */,
+			);
 			productName = DSHBuilder;
 			productReference = 01B1C4132C21C68900F8B7D1 /* DSHBuilder.app */;
 			productType = "com.apple.product-type.application";
@@ -363,6 +376,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		01B1C4302C21CFA200F8B7D1 /* YYGDSHBuilder */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = YYGDSHBuilder;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 01B1C40B2C21C68800F8B7D1 /* Project object */;
 }
