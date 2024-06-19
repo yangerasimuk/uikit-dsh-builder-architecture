@@ -1,2 +1,6 @@
-# uikit-dsh-builder-architecture
-iOS UIKit app architecture with data-state-handler builders and table layout
+# Архитектура iOS UIKit приложения на основе строителей
+
+## Задача
+Создать архитектуру приложения максимально разделяющую модель данных и визуальное представление.
+
+Ян Герасимук
