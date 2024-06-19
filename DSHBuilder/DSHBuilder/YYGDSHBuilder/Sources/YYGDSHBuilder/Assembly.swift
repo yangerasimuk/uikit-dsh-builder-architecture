@@ -12,7 +12,10 @@ public struct AssemblyImp: Assembly {
 	public static func assemble() -> UIViewController {
 		let view = ViewImp()
 		let router = RouterImp(view: view)
-		let interactor = InteractorImp(view: view, router: router)
+		let viewState = ViewStateImp(counter: 0)
+		let viewFactory = ViewFactoryImp(viewState: viewState)
+		let useCase = UseCaseImp(viewFactory: viewFactory)
+		let interactor = InteractorImp(view: view, useCase: useCase, router: router)
 		view.interactor = interactor
 		return view
 	}

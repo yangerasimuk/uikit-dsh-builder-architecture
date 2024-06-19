@@ -8,7 +8,6 @@
 import Foundation
 import UIKit
 
-/// Ячейка для заголовков
 final class SpaceCell: UITableViewCell {}
 
 extension SpaceCell: TableCellUpdatable {
