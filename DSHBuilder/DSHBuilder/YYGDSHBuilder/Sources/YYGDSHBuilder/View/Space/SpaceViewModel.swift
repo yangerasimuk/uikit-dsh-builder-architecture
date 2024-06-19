@@ -9,8 +9,6 @@ import Foundation
 import UIKit
 
 struct SpaceViewModel: TableItemViewModelable {
-	
 	let cellClass: AnyClass = SpaceCell.self
-	
 	let height: CGFloat
 }

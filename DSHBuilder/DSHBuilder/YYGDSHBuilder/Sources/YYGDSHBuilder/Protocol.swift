@@ -24,31 +24,46 @@ protocol View: AnyObject {
 	func showViewModel(_ viewModel: ViewModel)
 }
 
-/// Визуальная модель для построения ячейки
 protocol TableItemViewModelable {
-  /// Идентификатор ячейки
   var identifier: String { get }
-  
-  /// Класс ячейки
   var cellClass: AnyClass { get }
 }
 
 extension TableItemViewModelable {
-  /// Идентификатор по-умолчанию
   var identifier: String { String(describing: cellClass.self) }
 }
 
-/// Обработчик нажатия на элемент в общей таблице view
 protocol TableItemViewActionable {
-	/// Замыкание обработки нажатия
 	var action: (() -> Void)? { get set }
 }
 
-/// Обновляемая моделью ячейка таблицы
 protocol TableCellUpdatable: UITableViewCell {
-	/// Обновить ячейку из модели
-	/// - Parameter viewModel: Визуальная модель
 	func update(with viewModel: TableItemViewModelable)
 }
 
+protocol ViewBuilder {
+	func viewModels(
+		useCase: UseCase,
+		viewState: ViewState,
+		handler: UserActionHandler
+	) -> [TableItemViewModelable]?
+}
 
+protocol ViewFactory {
+	func viewModels(useCase: UseCase, handler: UserActionHandler) -> [TableItemViewModelable]
+	mutating func updateViewState(_ viewState: ViewState)
+}
+
+protocol UseCase {
+	func viewModel(handler: UserActionHandler) -> ViewModel?
+	mutating func viewModel(viewState: ViewState, handler: UserActionHandler) -> ViewModel?
+}
+
+protocol ViewState {
+	var counter: Int { get }
+}
+
+protocol UserActionHandler {
+	func alert(title: String, message: String)
+	mutating func reload(viewState: ViewState)
+}
